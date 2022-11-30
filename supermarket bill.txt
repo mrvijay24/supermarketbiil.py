@@ -1,0 +1,37 @@
+#super market
+print('items list:a.sugar=int 150 /n b.salt=int 100    c.biscuit packet=int 10  d.sampoo=int 100   e.almond=int 2000')
+a=int(150)
+b=int(100)
+c=int(10)
+d=int(100)
+e=int(2000)
+bill=int(0)
+phno=input('enter the phone number')
+name=input('enter the name')
+add=input('enter the address')
+print('enter the quantites of the items')
+x=int(input('enter the quantites of sugar'))
+bill=bill+a*x
+x=int(input('enter the quantites of salt'))
+bill=bill+b*x
+x=int(input('enter the quantites of sugar'))
+bill=bill+c*x
+x=int(input('enter the quantites of sugar'))
+bill=bill+d*x
+x=int(input('enter the quantites of sugar'))
+bill=bill+e*x
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+totalbill=tax+bill
+print('phone number:',phno)
+print('name:',name)
+print('tax:',tax)
+print('total bill:',totalbill)
